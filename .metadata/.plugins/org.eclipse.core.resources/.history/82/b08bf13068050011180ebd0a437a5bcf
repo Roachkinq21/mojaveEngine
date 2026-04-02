@@ -1,0 +1,16 @@
+package game;
+
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel{
+
+	// SCREEN SETTINGS
+	
+	final int orgTileSize = 16;
+	final int scale = 3;
+	
+	final int tileSize = orgTileSize * scale;
+	final int maxScreenCol = 16;
+	final int maxScreenRow = 12;
+	
+}

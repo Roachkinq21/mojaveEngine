@@ -1,0 +1,48 @@
+package game;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class KeyHandler implements KeyListener{
+	
+	GamePanel gp;
+	
+	public KeyHandler(GamePanel gp) {
+		this.gp = gp;
+	}
+
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		int code = e.getKeyCode();
+
+		if(code == KeyEvent.VK_W) {
+			System.out.println("UP!");
+			gp.moveUp();
+		}
+		if(code == KeyEvent.VK_A) {
+			System.out.println("LEFT!");
+			gp.moveLeft();
+		}
+		if(code == KeyEvent.VK_S) {
+			System.out.println("DOWN!");
+			gp.moveDown();
+		}
+		if(code == KeyEvent.VK_D) {
+			System.out.println("RIGHT!");
+			gp.moveRight();
+		}
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		
+		
+	}
+}
