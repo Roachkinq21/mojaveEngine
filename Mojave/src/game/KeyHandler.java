@@ -34,6 +34,10 @@ public class KeyHandler implements KeyListener{
 			System.out.println("RIGHT!");
 			gp.moveRight();
 		}
+		
+		if(code == KeyEvent.VK_I) {
+			System.out.println("INVENTORY");
+		}
 	}
 
 	@Override
